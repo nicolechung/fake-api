@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const feeds = require('./lib/fake-feeds')
-const feed = require('./lib/fake-feeds')
+const feed = require('./lib/fake-feed')
 
 var port = process.env.PORT || 8000
 
