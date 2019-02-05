@@ -28,7 +28,12 @@ npm start
 
 # API
 
+<<<<<<< HEAD
 localhost:8000/api/feeds
 localhost:8000/api/feeds/<some-id>
 
 
+=======
+```localhost:8000/feeds```
+```localhost:8000/feeds/<some-id>```
+>>>>>>> master
