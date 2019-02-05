@@ -28,7 +28,9 @@ npm start
 
 # API
 
+```
 localhost:8000/api/feeds
 localhost:8000/api/feeds/<some-id>
+```
 
 
