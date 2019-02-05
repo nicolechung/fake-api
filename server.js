@@ -8,11 +8,11 @@ var port = process.env.PORT || 8000
 
 app.use(express.static('public'));
 
-app.get('/feeds', function(request, response) {
+app.get('/api/feeds', function(request, response) {
   feeds(request, response)
 });
 
-app.get('/feeds/:id', function(request, response) {
+app.get('/api/feeds/:id', function(request, response) {
   feed(request, response)
 });
 
