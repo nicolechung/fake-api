@@ -6,7 +6,10 @@ const feed = require('./lib/fake-feed')
 
 var port = process.env.PORT || 8000
 
-app.use(express.static('public'));
+var corsOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200
+}
 
 app.get('/api/feeds', function(request, response) {
   feeds(request, response)
@@ -20,3 +23,5 @@ app.get('/api/feeds/:id', function(request, response) {
 const listener = app.listen(port, function() {
   console.log('Your app is listening on port ' + listener.address().port);
 });
+
+app.use(express.static('public'))
