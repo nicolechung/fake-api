@@ -6,11 +6,6 @@ const feed = require('./lib/fake-feed')
 
 var port = process.env.PORT || 8000
 
-var corsOptions = {
-  origin: '*',
-  optionsSuccessStatus: 200
-}
-
 app.get('/api/feeds', function(request, response) {
   feeds(request, response)
 });
