@@ -17,7 +17,7 @@ app.get('/api/feeds/:id', function(request, response) {
   feed(request, response)
 });
 
-app.get('/api/feeds/:id/social', function(request, response) {
+app.get('/api/papers/:id/social', function(request, response) {
   social(request, response)
 });
 
